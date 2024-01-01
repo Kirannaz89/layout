@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head><title>project</title></head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 23.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<body>
+
+
+<header style="background: lightgray; margin: 0px; padding: 20px;text-align: center;">
+    <p style="margin: 0px;">Header</p>
+</header>
+<nav style="background-color: lightgray;margin-top: 2px;">
+	<p style="text-align:center;">
+<a href="/html/">html</a> | 
+<a href="/css/">CSS</a> |
+<a href="/js/">JavaScript</a> |
+<a href="/python/">Python</a></p>
+</nav>
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Content</h2>
+    </div>
+    <div class="column" style="background-color:#bbb;width: 53%;">
+    <h2 style="text-align:center;">main content</h2>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2>Content</h2>
+  </div>
+</div>
+<footer style="background:lightgrey;margin-top:10px;padding:30px ;">
+  <p style="text-align:center;">footer
+  </p>
+</footer>
+</body>
+</html>
+
